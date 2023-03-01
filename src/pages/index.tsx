@@ -7,7 +7,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Question 1 Submission</title>
-        <meta name="description" content="Akmal Anuar's solution for regovtech graduate-take-home-assignment Question 1." />
+        <meta
+          name="description"
+          content="Akmal Anuar's solution for regovtech graduate-take-home-assignment Question 1."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
@@ -18,12 +21,12 @@ const Home: NextPage = () => {
           <div className="grid grid-cols-1 gap-4">
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="#"
-              target="_blank"
+              href="/registration_page"
             >
               <h3 className="text-2xl font-bold">Website solution →</h3>
               <div className="text-lg">
-                My solution for regovtech graduate-take-home-assignment Question 1.
+                My solution for regovtech graduate-take-home-assignment Question
+                1.
               </div>
             </Link>
           </div>
