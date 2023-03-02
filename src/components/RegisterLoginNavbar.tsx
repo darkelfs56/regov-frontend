@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -21,18 +22,22 @@ const RegisterLoginNavbar: FC<RegisterLoginNavbarProps> = ({
         <div className="flex justify-center gap-24 text-2xl">
           {routeName == "register" && (
             <>
-              <div className="cursor-pointer text-[#00C649]">
+              <Link href={""} className="cursor-pointer text-[#00C649]">
                 Register <hr className="h-1 bg-[#00C649]" />
-              </div>
-              <div className="cursor-pointer">Login</div>
+              </Link>
+              <Link href={"/login_page"} className="cursor-pointer">
+                Login
+              </Link>
             </>
           )}
           {routeName == "login" && (
             <>
-              <div className="cursor-pointer">Register</div>
-              <div className="cursor-pointer text-[#00C649]">
+              <Link href={"/registration_page"} className="cursor-pointer">
+                Register
+              </Link>
+              <Link href={""} className="cursor-pointer text-[#00C649]">
                 Login <hr className="h-1 bg-[#00C649]" />
-              </div>
+              </Link>
             </>
           )}
         </div>
