@@ -72,15 +72,15 @@ const RegistrationPage: NextPage = () => {
                     Date of birth
                   </label>
                   <div className="flex w-[363px] justify-between">
-                    <button className={buttonStyle}>
+                    <div className={buttonStyle}>
                       Day <IoIosArrowDown />
-                    </button>
-                    <button className={buttonStyle}>
+                    </div>
+                    <div className={buttonStyle}>
                       Month <IoIosArrowDown />
-                    </button>
-                    <button className={buttonStyle}>
+                    </div>
+                    <div className={buttonStyle}>
                       Year <IoIosArrowDown />
-                    </button>
+                    </div>
                   </div>
                   <div className="mt-12 flex flex-col">
                     <button className="w-[363px] cursor-pointer items-center justify-center gap-[20px] rounded-md border-2 border-solid border-[#00C649] bg-[#00C649] p-2 text-center text-white">
