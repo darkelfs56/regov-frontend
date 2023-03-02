@@ -20,13 +20,13 @@ const RegistrationPage: NextPage = () => {
       </Head>
       <RegisterLoginNavbar routeName={"register"} />
       <main className="flex min-h-screen flex-col items-center bg-[#F7F9FB]">
-        <div className="mt-10">
+        <div className="mt-6">
           <div className="p-4">
             <form action="" className="flex flex-col">
               <div className="text-center text-[20px] font-bold">
                 Register new account
               </div>
-              <div className="mt-10 flex flex-col">
+              <div className="mt-4 flex flex-col">
                 <div className="flex flex-col gap-[10px]">
                   <label htmlFor="email" className="font-medium">
                     Email
