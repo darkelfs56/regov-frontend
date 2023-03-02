@@ -3,11 +3,13 @@ import Head from "next/head";
 import Link from "next/link";
 import RegisterLoginNavbar from "~/components/RegisterLoginNavbar";
 import { IoIosArrowDown } from "react-icons/io";
+import { useRouter } from "next/router";
 
 const buttonStyle =
   "flex cursor-pointer items-center gap-[20px] border-2 border-solid border-black p-2 bg-white rounded-md";
 
 const RegistrationPage: NextPage = () => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -22,7 +24,13 @@ const RegistrationPage: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center bg-[#F7F9FB]">
         <div className="mt-6">
           <div className="p-4">
-            <form action="" className="flex flex-col">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                router.push("/login_page");
+              }}
+              className="flex flex-col"
+            >
               <div className="text-center text-[20px] font-bold">
                 Register new account
               </div>

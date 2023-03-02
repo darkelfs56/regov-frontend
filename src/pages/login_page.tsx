@@ -1,9 +1,11 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import RegisterLoginNavbar from "~/components/RegisterLoginNavbar";
 
 const LoginPage: NextPage = () => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -18,7 +20,12 @@ const LoginPage: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center bg-[#F7F9FB]">
         <div className="mt-[118px]">
           <div className="p-4">
-            <form action="">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                router.push("/user_profile_page");
+              }}
+            >
               <p className="text-center text-[20px] font-bold">
                 Login to your account
               </p>
